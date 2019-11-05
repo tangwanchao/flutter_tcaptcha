@@ -1,0 +1,21 @@
+name: flutter_tcaptcha
+description: 腾讯防水墙Flutter
+version: 0.0.1
+author: 唐万超
+homepage: https://github.com/tangwanchao/flutter_tcaptcha
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  plugin:
+    androidPackage: me.nuao.flutter_tcaptcha
+    pluginClass: FlutterTcaptchaPlugin

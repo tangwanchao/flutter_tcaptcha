@@ -88,17 +88,17 @@ class FlutterTcaptchaPlugin(private val registrar: Registrar) : MethodCallHandle
         }
         mDialog = TCaptchaHelper.createDialog(registrar.activeContext(),id,object :TCaptchaHelper.Callback{
             override fun onSuccess(jsonObject: JSONObject) {
-                result.success(TCaptchaResult.fromJsonObject(jsonObject).toJsonStr())
+                result.success(jsonObject.toString())
                 resetDialog()
             }
 
             override fun onLoadErr(jsonObject: JSONObject) {
-                result.success(TCaptchaResult.fromJsonObject(jsonObject).toJsonStr())
+                result.success(jsonObject.toString())
                 resetDialog()
             }
 
             override fun onFailure(jsonObject: JSONObject) {
-                result.success(TCaptchaResult.fromJsonObject(jsonObject).toJsonStr())
+                result.success(jsonObject.toString())
                 resetDialog()
             }
         },jsonString)

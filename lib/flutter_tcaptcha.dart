@@ -33,7 +33,7 @@ class TCaptchaResult {
   TCaptchaResult(this.ret, {this.ticket, this.appid, this.randstr, this.info});
 
   TCaptchaResult.fromJson(Map<String, dynamic> json)
-      : this.ret = json["resultCode"],
+      : this.ret = json["ret"],
         this.ticket = json["ticket"],
         this.appid = json["appid"],
         this.randstr = json["randstr"],

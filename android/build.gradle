@@ -45,5 +45,4 @@ android {
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation(name: 'captchasdk-release-1.0.2', ext: 'aar')
-    implementation 'com.google.code.gson:gson:2.8.6'
 }

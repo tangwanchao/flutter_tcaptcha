@@ -52,16 +52,12 @@ class TCaptchaResult {
   /// 防水墙验证通过
   /// ticket,appid,randstr 不为 null
   bool isSuccess() {
-    assert(ticket != null);
-    assert(appid != null);
-    assert(randstr != null);
-    return ret == 0;
+    return ret == 0 && ticket != null && appid != null && randstr != null;
   }
 
   /// 防水墙加载失败
   /// info 错误信息不为 null
   bool isLoadErr() {
-    assert(info != null);
     return ret == -1001;
   }
 

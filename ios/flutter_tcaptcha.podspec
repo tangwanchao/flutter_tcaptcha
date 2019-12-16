@@ -15,6 +15,8 @@ Pod::Spec.new do |s|
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
+  s.vendored_frameworks = 'libs/TCWebCodesSDK.framework'
+
   s.dependency 'Flutter'
   s.platform = :ios, '8.0'
 
